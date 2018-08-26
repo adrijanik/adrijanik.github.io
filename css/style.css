@@ -649,6 +649,14 @@ a:active {
     transition: all 0.3s ease 0s;
 }
 
+#award-box .company {
+    font-size: 15px;
+    color: #000;
+    margin-top: 0;
+    float: left;
+    transition: all 0.3s ease 0s;
+}
+
 #award-box .award:hover .title {
     color: #39b3ff;
 }
@@ -666,6 +674,9 @@ a:active {
     text-align: left;
 }
 #award-box .award:nth-child(2n) .type {
+    float: right;
+}
+#award-box .award:nth-child(2n) .company {
     float: right;
 }
 #award-box .award:nth-child(2n) .award-content2 {
