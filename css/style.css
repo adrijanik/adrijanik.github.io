@@ -10,7 +10,9 @@ body {
 @media (min-width: 992px) {
     body {
         padding-top: 0;
-        padding-left: 17rem;
+        padding-left: 13rem;
+        padding-right: 13rem;
+
     }
 }
 
@@ -118,7 +120,7 @@ a:active {
       #sideNav .navbar-collapse .navbar-nav .nav-item {
           display: block;
       }
-      #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+      #sideNav .navbar-collapse .navbar-nav .nav-item {
           display: block;
       }
   }
@@ -211,7 +213,7 @@ a:active {
                       ABOUT
 ====================================================*/
   #about {
-      background-image: url(../img/profile-banner.jpg); 
+      background-image: url(../img/bg3.jpg); 
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
@@ -225,7 +227,7 @@ a:active {
                     EXPERIENCE
 ====================================================*/  
   #experience {
-    background: #f5f5f5;
+    background: #ffffff;
   }
 
   #experience .card h4{
@@ -396,59 +398,11 @@ a:active {
 }  
 
 /*====================================================
-                      SKILLS
-======================================================*/
-
-#skills {
-    background-image: url("../img/bg-stats.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.skill-cover {
-    background-color: rgba(31, 31, 31, 0.68); 
-}
-
-.skill-cover h3{
-  font-family: "hind", sans-serif;
-  font-size: 35px;
-  margin-bottom: 40px;
-}
-
-.skill-item {
-    padding: 20px 0;
-    margin-bottom: 30px;
-    background: rgba(144, 144, 144, 0.78);
-}
-
-.skill-item i {
-    color: #2196f3;
-}
-
-.skill-item h2 {
-    color: #fff;
-    font-size: "hind", sans-serif;
-    font-size: 35px;
-    font-weight: 700;
-    margin-top: 15px;
-    margin-bottom: 1px;
-}
-
-.skill-item p {
-    color: #fff;
-    font-family: "hind", sans-serif;
-    /*text-transform: uppercase;*/
-    font-weight: 300;
-    margin-top: 0;
-}
-
-/*====================================================
                       AWARD
 ======================================================*/
  
 #awards {
-    background: #f0f0f0;
+    background: #ffffff;
 }
 
 #award-box {
