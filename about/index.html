@@ -221,8 +221,6 @@ gtag('config', 'G-380302865'); // Replace with your actual GA4 measurement ID
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-380302865"></script>
 <!-- End Google Analytics -->
-
-
 </head>
 <body>
   <header class="site-header" role="banner">
@@ -1101,7 +1099,7 @@ gtag('config', 'G-380302865'); // Replace with your actual GA4 measurement ID
         <a href="/data-rights/" rel="noopener noreferrer">Data Rights</a>
       </p>
       <p class="footer__meta">
-        Built with <a href="https://jekyllrb.com" rel="noopener noreferrer" target="_blank">Jekyll</a>. Updated Mar 2026. Personal blog - views expressed are my own and do not represent any organization.
+        Built with <a href="https://jekyllrb.com" rel="noopener noreferrer" target="_blank">Jekyll</a>. Updated Apr 2026. Personal blog - views expressed are my own and do not represent any organization.
       </p>
     </div>
   </div>
@@ -1322,7 +1320,7 @@ gtag('config', 'G-380302865'); // Replace with your actual GA4 measurement ID
         <input type="checkbox" id="analytics-cookies">
         <div>
           <div class="cookie-category-title">Analytics Cookies</div>
-          <div class="cookie-category-description">Help us understand how visitors interact with our website (Google Analytics)</div>
+          <div class="cookie-category-description">Help us understand how visitors interact with our website (Google Analytics, Microsoft Clarity)</div>
         </div>
       </div>
     </div>
@@ -1421,6 +1419,7 @@ window.CookieConsent = {
     // Apply consent to scripts
     if (this.preferences.analytics) {
       this.enableGoogleAnalytics();
+      this.enableMicrosoftClarity();
     }
     
     if (this.preferences.social) {
@@ -1435,6 +1434,18 @@ window.CookieConsent = {
       gtag('consent', 'update', {
         'analytics_storage': 'granted'
       });
+    }
+  },
+
+  enableMicrosoftClarity: function() {
+    // Microsoft Clarity will be loaded only after consent
+    if (typeof clarity === 'undefined') {
+      // Load Microsoft Clarity script
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "w6f8eu0mtq");
     }
   },
 

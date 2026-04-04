@@ -221,8 +221,6 @@ gtag('config', 'G-380302865'); // Replace with your actual GA4 measurement ID
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-380302865"></script>
 <!-- End Google Analytics -->
-
-
 </head>
 <body>
   <header class="site-header" role="banner">
@@ -338,7 +336,7 @@ gtag('config', 'G-380302865'); // Replace with your actual GA4 measurement ID
     <div class="page__content" itemprop="mainContentOfPage">
       <h1 id="terms-of-service">Terms of Service</h1>
 
-<p><strong>Last Updated:</strong> March 28, 2026<br />
+<p><strong>Last Updated:</strong> April 04, 2026<br />
 <strong>Effective Date:</strong> March 22, 2026</p>
 
 <h2 id="1-agreement-to-terms">1. Agreement to Terms</h2>
@@ -444,7 +442,16 @@ gtag('config', 'G-380302865'); // Replace with your actual GA4 measurement ID
 <h3 id="81-disqus-comments">8.1 Disqus Comments</h3>
 <p>Comments are powered by Disqus, a third-party service. Your use of Disqus is governed by Disqus’s Terms of Service and Privacy Policy, which are separate from these Terms.</p>
 
-<h3 id="82-external-links">8.2 External Links</h3>
+<h3 id="82-analytics-services">8.2 Analytics Services</h3>
+<p>My Website uses analytics services to understand user behavior and improve the experience:</p>
+<ul>
+  <li><strong>Google Analytics:</strong> For website traffic analysis</li>
+  <li><strong>Microsoft Clarity:</strong> For user behavior analysis, heatmaps, and session recordings</li>
+</ul>
+
+<p>Your use of these analytics services is governed by their respective privacy policies and terms of service.</p>
+
+<h3 id="83-external-links">8.3 External Links</h3>
 <p>My Website may contain links to third-party websites. I am not responsible for the content, privacy policies, or practices of third-party websites. You acknowledge and agree that I am not liable for any loss or damage caused by your use of third-party websites.</p>
 
 <h2 id="9-privacy">9. Privacy</h2>
@@ -506,7 +513,7 @@ gtag('config', 'G-380302865'); // Replace with your actual GA4 measurement ID
         <a href="/data-rights/" rel="noopener noreferrer">Data Rights</a>
       </p>
       <p class="footer__meta">
-        Built with <a href="https://jekyllrb.com" rel="noopener noreferrer" target="_blank">Jekyll</a>. Updated Mar 2026. Personal blog - views expressed are my own and do not represent any organization.
+        Built with <a href="https://jekyllrb.com" rel="noopener noreferrer" target="_blank">Jekyll</a>. Updated Apr 2026. Personal blog - views expressed are my own and do not represent any organization.
       </p>
     </div>
   </div>
@@ -727,7 +734,7 @@ gtag('config', 'G-380302865'); // Replace with your actual GA4 measurement ID
         <input type="checkbox" id="analytics-cookies">
         <div>
           <div class="cookie-category-title">Analytics Cookies</div>
-          <div class="cookie-category-description">Help us understand how visitors interact with our website (Google Analytics)</div>
+          <div class="cookie-category-description">Help us understand how visitors interact with our website (Google Analytics, Microsoft Clarity)</div>
         </div>
       </div>
     </div>
@@ -826,6 +833,7 @@ window.CookieConsent = {
     // Apply consent to scripts
     if (this.preferences.analytics) {
       this.enableGoogleAnalytics();
+      this.enableMicrosoftClarity();
     }
     
     if (this.preferences.social) {
@@ -840,6 +848,18 @@ window.CookieConsent = {
       gtag('consent', 'update', {
         'analytics_storage': 'granted'
       });
+    }
+  },
+
+  enableMicrosoftClarity: function() {
+    // Microsoft Clarity will be loaded only after consent
+    if (typeof clarity === 'undefined') {
+      // Load Microsoft Clarity script
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "w6f8eu0mtq");
     }
   },
 
