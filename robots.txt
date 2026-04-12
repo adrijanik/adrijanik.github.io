@@ -14,23 +14,23 @@
 <meta name="robots" content="index, follow">
 <meta name="googlebot" content="index, follow">
 <meta name="theme-color" content="#ECC700">
-<link rel="canonical" href="https://adrijanik.com" />
+
 <!-- Structured Data for LLM Discovery -->
 
 
 <!-- Canonical URL -->
-<link rel="canonical" href="http://localhost:4000/robots.txt">
-
+ 
+<link rel="canonical" href="https://adrijanik.com//robots.txt">
 <!-- Language -->
-<link rel="alternate" hreflang="en" href="http://localhost:4000/robots.txt">
-<link rel="alternate" hreflang="x-default" href="http://localhost:4000/robots.txt">
+<link rel="alternate" hreflang="en" href="https://adrijanik.com/robots.txt">
+<link rel="alternate" hreflang="x-default" href="https://adrijanik.com/robots.txt">
 
 <!-- Enhanced Open Graph / Social Media -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://localhost:4000/robots.txt">
+<meta property="og:url" content="https://adrijanik.com/robots.txt">
 <meta property="og:title" content="Adrianna Janik - Semantic Web & AI Expert">
 <meta property="og:description" content="Senior AI Researcher & Knowledge Graph Expert. Building production KGs, optimizing SPARQL queries, and driving business value through semantic technologies. SPARQL optimization, federation, and mod...">
-<meta property="og:image" content="http://localhost:4000/assets/images/og-default.png">
+<meta property="og:image" content="https://adrijanik.com/assets/images/og-default.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Adrianna Janik - Semantic Web & AI Expert">
@@ -95,14 +95,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Senior AI Researcher &amp; Knowledge Graph Expert. Building production KGs, optimizing SPARQL queries, and driving business value through semantic technologies. SPARQL optimization, federation, and modern data architecture insights." />
 <meta property="og:description" content="Senior AI Researcher &amp; Knowledge Graph Expert. Building production KGs, optimizing SPARQL queries, and driving business value through semantic technologies. SPARQL optimization, federation, and modern data architecture insights." />
-<link rel="canonical" href="http://localhost:4000/robots.txt" />
-<meta property="og:url" content="http://localhost:4000/robots.txt" />
+<link rel="canonical" href="https://adrijanik.com/robots.txt" />
+<meta property="og:url" content="https://adrijanik.com/robots.txt" />
 <meta property="og:site_name" content="Adrianna Janik - Semantic Web &amp; AI Expert" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Adrianna Janik - Semantic Web &amp; AI Expert" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Adrianna Janik"},"description":"Senior AI Researcher &amp; Knowledge Graph Expert. Building production KGs, optimizing SPARQL queries, and driving business value through semantic technologies. SPARQL optimization, federation, and modern data architecture insights.","headline":"Adrianna Janik - Semantic Web &amp; AI Expert","url":"http://localhost:4000/robots.txt"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Adrianna Janik"},"description":"Senior AI Researcher &amp; Knowledge Graph Expert. Building production KGs, optimizing SPARQL queries, and driving business value through semantic technologies. SPARQL optimization, federation, and modern data architecture insights.","headline":"Adrianna Janik - Semantic Web &amp; AI Expert","url":"https://adrijanik.com/robots.txt"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -359,7 +359,7 @@ Disallow: /search
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: http://localhost:4000/sitemap.xml
+Sitemap: https://adrijanik.com/sitemap.xml
 
 # Additional search engines
 User-agent: Googlebot
