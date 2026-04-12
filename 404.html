@@ -150,6 +150,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <!-- GDPR-compliant Google Analytics with Consent Mode -->
+<!-- Only load on production domains, not localhost -->
 <script>
 // Prevent FOUC by setting theme immediately
 (function() {
@@ -158,22 +159,26 @@
   document.documentElement.setAttribute('data-theme', theme);
 })();
 
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
+// Only load analytics on non-localhost domains
+if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
 
-// Initialize with consent denied by default
-gtag('consent', 'default', {
-  'ad_storage': 'denied',
-  'analytics_storage': 'denied',
-  'ad_user_data': 'denied',
-  'ad_personalization': 'denied'
-});
+  // Initialize with consent denied by default
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied'
+  });
 
-gtag('js', new Date());
-gtag('config', 'G-380302865'); // Replace with your actual GA4 measurement ID
+  gtag('js', new Date());
+  gtag('config', 'G-380302865'); // Replace with your actual GA4 measurement ID
+  
+  // Load GA script
+  document.write('<script async src="https://www.googletagmanager.com/gtag/js?id=G-380302865"><\/script>');
+}
 </script>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-380302865"></script>
 <!-- End Google Analytics -->
 </head>
 <body>
@@ -634,8 +639,8 @@ window.CookieConsent = {
   },
 
   enableMicrosoftClarity: function() {
-    // Microsoft Clarity will be loaded only after consent
-    if (typeof clarity === 'undefined') {
+    // Microsoft Clarity will be loaded only after consent and not on localhost
+    if (typeof clarity === 'undefined' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
       // Load Microsoft Clarity script
       (function(c,l,a,r,i,t,y){
           c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
