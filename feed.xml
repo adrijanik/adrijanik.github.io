@@ -4,10 +4,10 @@
   <channel>
     <title>Adrianna Janik - Semantic Web &amp; AI Expert</title>
     <description>Senior AI Researcher &amp; Knowledge Graph Expert. Building production KGs, optimizing SPARQL queries, and driving business value through semantic technologies. SPARQL optimization, federation, and modern data architecture insights.</description>
-    <link>https://adrijanik.com</link>
-    <atom:link href="https://adrijanik.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Apr 2026 22:34:28 +0100</pubDate>
-    <lastBuildDate>Sun, 12 Apr 2026 22:34:28 +0100</lastBuildDate>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 14 Jun 2026 23:49:04 +0100</pubDate>
+    <lastBuildDate>Sun, 14 Jun 2026 23:49:04 +0100</lastBuildDate>
     
   </channel>
 </rss>
